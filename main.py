@@ -21,7 +21,7 @@ from sklearn.metrics import (
 print("Libraries imported successfully!")
 
 
-df = pd.read_csv("Sleep_Efficiency.csv")
+df = pd.read_csv("data/Sleep_Efficiency.csv")
 
 
 print("Dataset shape:", df.shape)
