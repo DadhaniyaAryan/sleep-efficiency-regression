@@ -17,7 +17,7 @@ All team members contributed to the code and committed using their own GitHub ac
 
 ## Project structure
 
-text
+```text
 sleep-efficiency-regression/
 ├── .gitignore
 ├── README.md
@@ -25,7 +25,7 @@ sleep-efficiency-regression/
 ├── main.ipynb
 └── data/
     └── Sleep_Efficiency.csv
-
+```
 
 ## Dataset
 
@@ -36,7 +36,7 @@ The dataset contains 452 rows and 15 columns. The CSV is included in data/, so c
 
 ## Setup and run
 
-*Python requirement:* Python 3.11–3.14 (inclusive). Check your installed version before continuing.
+**Python requirement:** Python 3.11–3.14 (inclusive). Check your installed version before continuing.
 
 Follow the commands for your operating system from top to bottom. They create a virtual environment and use its Python directly, so activation is not required.
 
@@ -44,7 +44,7 @@ Follow the commands for your operating system from top to bottom. They create a 
 
 Open PowerShell and run:
 
-powershell
+```powershell
 git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
 cd sleep-efficiency-regression
 python --version
@@ -53,13 +53,13 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
 .\.venv\Scripts\python.exe -m jupyter trust main.ipynb
 .\.venv\Scripts\python.exe -m notebook main.ipynb --ServerApp.open_browser=True
+```
 
-
-### macOS (Terminal)
+### macOS (Terminal)/ Linux
 
 Open Terminal and run:
 
-bash
+```bash
 git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
 cd sleep-efficiency-regression
 python3 --version
@@ -68,22 +68,22 @@ python3 -m venv .venv
 .venv/bin/python -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
 .venv/bin/python -m jupyter trust main.ipynb
 .venv/bin/python -m notebook main.ipynb --ServerApp.open_browser=True
-
+```
 
 The execution command runs all notebook cells and saves their results in main.ipynb. The trust command marks those locally generated outputs as trusted. The final command opens the notebook in your browser.
 
 ### Common errors and fixes
 
-- *Python not found:* Install Python 3.11–3.14, then reopen the terminal.
-- *Package installation fails:* Check your internet connection and rerun the pip install -r requirements.txt command above.
-- *CSV file not found:* Run commands from the repository root and check that data/Sleep_Efficiency.csv exists.
-- *Browser doesn’t open:* Copy the local http://127.0.0.1:... address from the terminal into your browser. Keep the terminal open.
+- **Python not found:** Install Python 3.11–3.14, then reopen the terminal.
+- **Package installation fails:** Check your internet connection and rerun the pip install -r requirements.txt command above.
+- **CSV file not found:** Run commands from the repository root and check that data/Sleep_Efficiency.csv exists.
+- **Browser doesn’t open:** Copy the local http://127.0.0.1:... address from the terminal into your browser. Keep the terminal open.
 
 ## Expected output
 
 After running all cells, the notebook displays the dataset overview, missing-value counts, model metrics (R-squared, MAE, and RMSE), a preview of predictions, exploratory plots, and model diagnostic plots.
 
-*Expected-output screenshot:* 
+**Expected-output screenshot:** 
 
 ## Slides and video
 
