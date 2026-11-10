@@ -1,47 +1,50 @@
-# Sleep Efficiency Regression
+# Sleep Efficiency Prediction Using Multiple Linear Regression
 
-Multiple linear regression analysis that predicts sleep efficiency from sleep and lifestyle features in the supplied dataset.
+A team mini-project that uses multiple linear regression to predict sleep efficiency from sleep and lifestyle data.
 
 ## Team and roles
 
+*Group 37*
 
-| Member | GitHub handle | Role |
-|---|---|---|
-| SHISTI UPENDRA | ShistiUpendra | Documentation |
-| DADHANIYA ARYAN KETANBHAI | DadhaniyaAryan  | Execution |
-| PRATEEK | Prateek | PPT |
-| VIRAJ AMIT BAPAT | virajiitrpr | Video |
+| Team member | GitHub handle | Entry number | Role |
+|---|---|---|---|
+| Dadhaniya Aryan Ketanbhai | [@DadhaniyaAryan](https://github.com/DadhaniyaAryan) | 2026MCB1523 | Execution Lead |
+| Shisti Upendra | [@ShistiUpendra](https://github.com/ShistiUpendra) | 2026EEB1410 | Documentation Lead |
+| Viraj Amit Bapat | [@virajiitrpr](https://github.com/virajiitrpr) | 2026ESB1499 | Video Lead |
+| Prateek | [@Prateek](https://github.com/Prateek) | 2026AIB1069 | PPT Lead |
 
+All team members contributed to the code and committed using their own GitHub accounts.
 
 ## Project structure
 
-```text
-sleep_efficiency_project/
+text
+sleep-efficiency-regression/
+├── .gitignore
 ├── README.md
 ├── requirements.txt
-├── data/
-│   └── Sleep_Efficiency.csv
 ├── main.ipynb
-├──.gitignore
+└── data/
+    └── Sleep_Efficiency.csv
 
-```
-### Group number: 37
 
 ## Dataset
 
+The dataset contains 452 rows and 15 columns. The CSV is included in data/, so cloning the repository downloads it; no separate download is needed.
+
+- *Source:* [Sleep Efficiency dataset on Kaggle](https://www.kaggle.com/datasets/equilibriumm/sleep-efficiency/data)
 
 
 ## Setup and run
 
-### This project requires Python 3.11–3.14.(make sure you have one of these installed)
+*Python requirement:* Python 3.11–3.14 (inclusive). Check your installed version before continuing.
 
- Follow the commands for your operating system, from top to bottom. They create a virtual environment and use its Python directly.
+Follow the commands for your operating system from top to bottom. They create a virtual environment and use its Python directly, so activation is not required.
 
 ### Windows (PowerShell)
 
 Open PowerShell and run:
 
-```powershell
+powershell
 git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
 cd sleep-efficiency-regression
 python --version
@@ -50,13 +53,13 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
 .\.venv\Scripts\python.exe -m jupyter trust main.ipynb
 .\.venv\Scripts\python.exe -m notebook main.ipynb --ServerApp.open_browser=True
-```
+
 
 ### macOS (Terminal)
 
 Open Terminal and run:
 
-```bash
+bash
 git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
 cd sleep-efficiency-regression
 python3 --version
@@ -65,14 +68,28 @@ python3 -m venv .venv
 .venv/bin/python -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
 .venv/bin/python -m jupyter trust main.ipynb
 .venv/bin/python -m notebook main.ipynb --ServerApp.open_browser=True
-```
-#### possible error and fix
 
-**Browser doesn’t open:** Copy the one of the local http://127.0.0.1:...  out of three links from Terminal and paste it into your browser.Then open main.ipynb. (Keep terminal open).
 
-**nbconvert or notebook not found:**Reinstall requirements with .venv/bin/python -m pip install -r requirements.txt, then retry the failed command.
+The execution command runs all notebook cells and saves their results in main.ipynb. The trust command marks those locally generated outputs as trusted. The final command opens the notebook in your browser.
 
-**Notebook says Not Trusted:**	Run .venv/bin/python -m jupyter trust main.ipynb. Trust only code you’ve reviewed.
+### Common errors and fixes
 
-**No module named venv:**Reinstall Python with its standard library components, then retry that command.
+- *Python not found:* Install Python 3.11–3.14, then reopen the terminal.
+- *Package installation fails:* Check your internet connection and rerun the pip install -r requirements.txt command above.
+- *CSV file not found:* Run commands from the repository root and check that data/Sleep_Efficiency.csv exists.
+- *Browser doesn’t open:* Copy the local http://127.0.0.1:... address from the terminal into your browser. Keep the terminal open.
 
+## Expected output
+
+After running all cells, the notebook displays the dataset overview, missing-value counts, model metrics (R-squared, MAE, and RMSE), a preview of predictions, exploratory plots, and model diagnostic plots.
+
+*Expected-output screenshot:* 
+
+## Slides and video
+
+- *Slides:* 
+- *Video:* 
+
+## AI-use disclosure
+
+ChatGPT assisted with project code and debugging, creating numeric time features from bedtime and wake-up times, formatting plots and the README, and preparing setup instructions for opening and running the notebook. A responsible team member reviewed the AI-assisted material and the final project before submission.
