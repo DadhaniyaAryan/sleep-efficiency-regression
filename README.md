@@ -33,7 +33,9 @@ sleep_efficiency_project/
 
 ## Setup and run
 
-This project requires Python 3.11–3.14. Follow the commands for your operating system, from top to bottom. They create a virtual environment and use its Python directly, so activation is not required.
+### This project requires Python 3.11–3.14.(make sure you have one of these installed)
+
+ Follow the commands for your operating system, from top to bottom. They create a virtual environment and use its Python directly.
 
 ### Windows (PowerShell)
 
@@ -43,9 +45,11 @@ Open PowerShell and run:
 git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
 cd sleep-efficiency-regression
 python --version
-python -m pip install -r requirements.txt
-python -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
-python -m jupyter notebook main.ipynb
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
+.\.venv\Scripts\python.exe -m jupyter trust main.ipynb
+.\.venv\Scripts\python.exe -m notebook main.ipynb --ServerApp.open_browser=True
 ```
 
 ### macOS (Terminal)
@@ -56,9 +60,19 @@ Open Terminal and run:
 git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
 cd sleep-efficiency-regression
 python3 --version
-python3 -m pip install -r requirements.txt
-python3 -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
-python3 -m jupyter notebook main.ipynb
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m jupyter nbconvert --to notebook --execute --inplace main.ipynb
+.venv/bin/python -m jupyter trust main.ipynb
+.venv/bin/python -m notebook main.ipynb --ServerApp.open_browser=True
 ```
+#### possible error and fix
 
-The version-check command should show Python 3.11, 3.12, 3.13, or 3.14. The notebook reads `data/Sleep_Efficiency.csv` using a relative path. The execution command runs all cells and saves their results in `main.ipynb`; the final command opens the notebook so the results and code can be viewed.
+**Browser doesn’t open:** Copy the one of the local http://127.0.0.1:...  out of three links from Terminal and paste it into your browser.Then open main.ipynb. (Keep terminal open).
+
+**nbconvert or notebook not found:**Reinstall requirements with .venv/bin/python -m pip install -r requirements.txt, then retry the failed command.
+
+**Notebook says Not Trusted:**	Run .venv/bin/python -m jupyter trust main.ipynb. Trust only code you’ve reviewed.
+
+**No module named venv:**Reinstall Python with its standard library components, then retry that command.
+
