@@ -11,7 +11,7 @@ A team mini-project that uses multiple linear regression to predict sleep effici
 | Dadhaniya Aryan Ketanbhai | [@DadhaniyaAryan](https://github.com/DadhaniyaAryan) | 2026MCB1523 | Execution Lead |
 | Shisti Upendra | [@ShistiUpendra](https://github.com/ShistiUpendra) | 2026EEB1410 | Documentation Lead |
 | Viraj Amit Bapat | [@virajiitrpr](https://github.com/virajiitrpr) | 2026ESB1499 | Video Lead |
-| Prateek | [@Prateek](https://github.com/Prateek) | 2026AIB1069 | PPT Lead |
+| Prateek | [@prateek-1069](https://github.com/prateek-1069) | 2026AIB1069 | PPT Lead |
 
 All team members contributed to the code and committed using their own GitHub accounts.
 
@@ -38,7 +38,7 @@ The dataset contains 452 rows and 15 columns. The CSV is included in data/, so c
 
 **Python requirement:** Python 3.11–3.14 (inclusive). Check your installed version before continuing.
 
-Follow the commands for your operating system from top to bottom. They create a virtual environment and use its Python directly, so activation is not required.
+Follow the commands for your operating system from top to bottom line by line. They create a virtual environment and use its Python directly.
 
 ### Windows (PowerShell)
 
