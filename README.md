@@ -4,7 +4,7 @@ A team mini-project that uses multiple linear regression to predict sleep effici
 
 ## Team and roles
 
-*Group 37*
+**Group 37**
 
 | Team member | GitHub handle | Entry number | Role |
 |---|---|---|---|
@@ -23,6 +23,7 @@ sleep-efficiency-regression/
 ├── README.md
 ├── requirements.txt
 ├── main.ipynb
+├── output.png
 └── data/
     └── Sleep_Efficiency.csv
 ```
@@ -45,7 +46,7 @@ Follow the commands for your operating system from top to bottom line by line. T
 Open PowerShell and run:
 
 ```powershell
-git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
+git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression
 cd sleep-efficiency-regression
 python --version
 python -m venv .venv
@@ -55,12 +56,12 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m notebook main.ipynb --ServerApp.open_browser=True
 ```
 
-### macOS (Terminal)/ Linux
+### macOS /Linux (Terminal)
 
 Open Terminal and run:
 
 ```bash
-git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression.git
+git clone https://github.com/DadhaniyaAryan/sleep-efficiency-regression
 cd sleep-efficiency-regression
 python3 --version
 python3 -m venv .venv
@@ -81,9 +82,14 @@ The execution command runs all notebook cells and saves their results in main.ip
 
 ## Expected output
 
-After running all cells, the notebook displays the dataset overview, missing-value counts, model metrics (R-squared, MAE, and RMSE), a preview of predictions, exploratory plots, and model diagnostic plots.
+| Evaluation | MAE | MSE | RMSE | R² |
+|---|---:|---:|---:|---:|
+| Test set (91 rows) | 0.0507 | 0.0039 | 0.0622 | 0.7919 |
+
 
 **Expected-output screenshot:** 
+
+![Model evaluation results](output.png)
 
 ## Slides and video
 
