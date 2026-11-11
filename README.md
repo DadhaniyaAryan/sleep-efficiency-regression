@@ -93,7 +93,7 @@ The execution command runs all notebook cells and saves their results in main.ip
 
 ## Slides and video
 
-- *Slides:* 
+- *Slides:* [Download the dataset](https://drive.google.com/file/d/13LiVtrkvceJx4YtWfma8ENM5xcPf8QvX/view)
 - *Video:* 
 
 ## AI-use disclosure
