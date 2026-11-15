@@ -94,8 +94,8 @@ The execution command runs all notebook cells and saves their results in main.ip
 ## Slides and video
 
 - *Slides:* [Download the dataset](https://drive.google.com/file/d/13LiVtrkvceJx4YtWfma8ENM5xcPf8QvX/view)
-- *Video:* 
+- *Video:*  [Watch the demo video here](https://drive.google.com/file/d/1i3FehLyCfE0vxlhzwDSBlxCcDPpK0D07/view?usp=sharing)
 
 ## AI-use disclosure
 
-ChatGPT assisted with project code and debugging, creating numeric time features from bedtime and wake-up times, formatting plots and the README, and preparing setup instructions for opening and running the notebook. A responsible team member reviewed the AI-assisted material and the final project before submission.
+ChatGPT assisted with project code and debugging, creating numeric time features from bedtime and wake-up times, formatting plots the README,and slides, and preparing setup instructions for opening and running the notebook. A responsible team member reviewed the AI-assisted material and the final project before submission.
